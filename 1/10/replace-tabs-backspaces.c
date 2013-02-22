@@ -2,7 +2,8 @@
 
 /* use 'z' instead of EOF so we hava a way
    of exiting from user input in terminal */
-#define EXIT_CONDITION 'z'
+//#define EXIT_CONDITION 'z'
+#define EXIT_CONDITION EOF
 
 /* replace tabs, backspaces and backslahes with \t, \b, \\ */
 main()
