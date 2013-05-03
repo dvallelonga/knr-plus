@@ -7,8 +7,8 @@ int readline(char line[], int maxline);
 /* Remove trailing blanks and tabs from each line of input, and delete entirely blank lines */
 main()
 {
-  int len; // length of current line segment
-  char line[MAXLINE]; // segment of line currently being read in
+  int len; // length of current line 
+  char line[MAXLINE]; // line currently being read in
 
   while((len = readline(line, MAXLINE)) > 0){
     printf("BEFORE (%d): \"%s\"\n", len, line);
@@ -19,7 +19,7 @@ main()
         lastIndex--;
       }
       for(; (c = line[lastIndex]) == ' ' || c == '\t'; --lastIndex){}
-      if(lastIndex >= 0){ // only want lines that contain a non-blan/tab character
+      if(lastIndex >= 0){ // only want lines that contain a non-blank/tab character
         // put the \n back in if line originally ended with one.
         if(line[len-1] == '\n'){
           line[lastIndex+1] = '\n';
