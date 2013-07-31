@@ -1,0 +1,15 @@
+open 0
+	open 1
+		open 2
+			open 3
+				open 4
+				close 4
+			close 3
+		close 2
+	close 1
+close 0
+
+ab	cdef		gh	i
+	ab	cd	efgh	i
+abcd	ef
+12345678	9
